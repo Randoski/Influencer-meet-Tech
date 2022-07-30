@@ -4,79 +4,116 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="./css/style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="script.js">
         <title>Influencer meet Tech</title>
     </head>
     <body>
         <!-- Nav  -->
         <header>
-            <div class="container">
+            <div class="container header-container">
                 <!-- Logo  -->
-                <img src="./Images/Logo.svg" alt="IMTConf logo" class="mainlogo" />
+                <a href="#" class="logo">
+                    <img src="./Images/Logo.svg" alt="IMTConf logo" class="main-logo" />
+                </a>
 
                 <!-- Nav right -->
                 <div class="nav-right">
                     <!-- Buy tickets -->
                     <div class="buy-tickets link-arrow">
                         <a href="#">Buy tickets</a>
-                        <img src="./Images/arrow-link-purple.png" alt="Link image" />
+                        <img src="./Images/arrow-link-purple.svg" alt="Link image" />
                     </div>
 
                     <!-- Nav links -->
                     <nav class="nav-links">
-                        <a href="#"><img src="./Images/Hamburger.png" alt="Hamburger menu" /></a>
                         <a href="#">About</a>
                         <a href="#">Speakers</a>
                         <a href="#">Organizers</a>
                         <a href="#">Volunteer</a>
                         <a href="#">Sponsor</a>
+
+                        <!-- Nav extra (Mobile) -->
+                        <div class="nav-extra">
+                            <div class="buy-tickets link-arrow">
+                                <a href="#">Buy tickets</a>
+                                <img src="./Images/arrow-link-purple.svg" alt="Link image" />
+                            </div>
+                            <div class="close">
+                                <p class="close-link">Close</p>
+                            </div>
+                        </div>
                     </nav>
+                    <div class="hamburger">
+                        <i class="fa fa-bars"></i>
+                    </div>
                 </div>
             </div>
         </header>
 
         <!-- Hero Section -->
         <section id="hero-section">
-            <div class="container">
+            <div class="container section1-container">
                 <!-- Mobile hero Image -->
-                <img src="./Images/Hero-section-mobile.svg" alt="Hero-Image-mobile" />
+                <img src="./Images/Hero-section-mobile.svg" alt="Hero-Image-mobile" id="mobile-hero-image" />
+
                 <!-- Web hero image -->
-                <img src="./Images/Hero-section-web.svg" alt="Hero-Image-web">
+                <img src="./Images/Hero-section-web.svg" alt="Hero-Image-web" id="web-hero-image" />
             </div>
         </section>
 
         <!-- Hero section 2 -->
         <section id="hero-section2">
             <div class="container">
+
                 <!-- What is IMTCONF? -->
                 <div class="what-is-imtconf">
-                    <p>What is IMTCONF?</p>
-                    <p>We are a community of Influencers and Tech Personalities.</p>
+                    <p class="text-head">What is IMTCONF?</p>
+                    <p class="text-copy">We are a community of Influencers and Tech Personalities.</p>
                 </div>
 
                 <!-- What is IMTCONF? section 2-->
                 <div class="what-is-imtconf-2">
                     <div class="imtconf-1">
                         <p class="community-feature">Human-centered community</p>
-                        <p class="we-are">We are <span class="Designers">Designers</span></p>
+                        <p class="we-are">
+                            We are <br />
+                            <span class="designers">Designers</span>
+                        </p>
                     </div>
 
                     <div class="imtconf-2">
                         <!-- Community text -->
-                        <p class="community text">A community of Influencers and Tech Personalities forging a stage where the continent’s brightest minds meet new partners, and, the sharpest innovators to share their visions.</p>
+                        <p class="community-text">A community of Influencers and Tech Personalities forging a stage where the continent’s brightest minds meet new partners, and the sharpest innovators to share their visions.</p>
+
                         <!-- Contact & Logo -->
-                        <div class="contact-&-logo">
+                        <div class="contact-and-logo">
                             <!-- Imtconf Logo -->
-                            <img src="./Images/Logo.svg" alt="Logo" class="logo" />
+                            <a href="">
+                                <img src="./Images/Logo3.svg" alt="Logo" class="logo" />
+                            </a>
+
                             <!-- Socials logo -->
                             <div class="socials-1">
-                                <img src="./Images/Instagram2.png" alt="Instagram" />
-                                <img src="./Images/LinkedIn2.png" alt="LinkedIn" />
-                                <img src="./Images/twitter2.png" alt="Twitter" />
-                                <img src="./Images/mail2.png" alt="Mail" />
+                                <a href="#">
+                                    <img src="./Images/Instagram2.svg" alt="Instagram" />
+                                </a>
+
+                                <a href="#">
+                                    <img src="./Images/LinkedIn2.svg" alt="Instagram" />
+                                </a>
+
+                                <a href="#">
+                                    <img src="./Images/twitter2.svg" alt="Instagram" />
+                                </a>
+
+                                <a href="#">
+                                    <img src="./Images/mail2.svg" alt="Instagram" />
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -86,70 +123,86 @@
 
         <!-- Speakers section -->
         <section id="speakers-section">
-            <div class="container">
+            <div class="container speaker-section">
                 <!-- Speakers section heading -->
-                <p><span class="font-stroke">Here</span> are some <span class="font-stroke">of the people</span> <span class="italics-font">making our</span> <span class="bold-font">dream work.</span></p>
+                <h1 class="section-heading-text">
+                    <span class="font-stroke">Here</span> are some <span class="font-stroke">of the people</span><br />
+                    <span class="italics-font-2">making our</span> <span class="bold-font">dream work.</span>
+                </h1>
+
                 <!-- Speakers copy -->
                 <p class="speakers-copy">
                     Dreams are not possible without people bringing them to life and here are the people helping us bring the IMTConf dream to life. We have carefully chosen amazing speakers who are a force to reckon with in the tech space.
                 </p>
-                <p class="working on">Here's what they've been working on:</p>
+                <p class="working-on">Here's what they've been working on:</p>
+            </div>
+        </section>
 
-                <!-- About speaker -->
-                <div class="about-speaker">
-                    <!-- Speaker 1 -->
-                    <div class="speaker">
-                        <img src="./Images/Speaker 1.jpg" alt="Speaker 1 image" />
-                        <div class="tech">
-                            <p>Tech</p>
-                        </div>
+        <section class="speaker-container">
+            <!-- About speaker -->
+            <div class="about-speaker">
+                <!-- Speaker 1 -->
+                <div class="speaker">
+                    <img src="./Images/Speaker 1.png" alt="Speaker 1 image" />
+                    <div class="tech">
+                        <p>Tech</p>
+                    </div>
+                    <div class="speaker-details">
                         <p class="speaker-or-volunteer">Speaker</p>
                         <p class="speaker-name">Samson Goddy</p>
-                        <p class="speaker-work">Accessibility in Design - A handmaid’s tale</p>
+                        <p class="speaker-topic">Accessibility in Design - A handmaid’s tale</p>
                     </div>
+                </div>
 
-                    <!-- Speaker 2 -->
-                    <div class="speaker">
-                        <img src="./Images/Speaker 2.jpg" alt="Speaker 2 image" />
-                        <div class="influencer">
-                            <p>Influencer</p>
-                        </div>
+                <!-- Speaker 2 -->
+                <div class="speaker">
+                    <img src="./Images/Speaker 2.png" alt="Speaker 2 image" />
+                    <div class="influencer">
+                        <p>Influencer</p>
+                    </div>
+                    <div class="speaker-details">
                         <p class="speaker-or-volunteer">Speaker</p>
                         <p class="speaker-name">Mr. Heelariouz</p>
-                        <p class="speaker-work">Accessibility in Design - A handmaid’s tale</p>
+                        <p class="speaker-topic">Accessibility in Design - A handmaid’s tale</p>
                     </div>
+                </div>
 
-                    <!-- Speaker 3 -->
-                    <div class="speaker">
-                        <img src="./Images/Speaker 3.png" alt="Speaker 3 image" />
-                        <div class="tech">
-                            <p>Tech</p>
-                        </div>
+                <!-- Speaker 3 -->
+                <div class="speaker">
+                    <img src="./Images/Speaker 3.png" alt="Speaker 3 image" />
+                    <div class="tech">
+                        <p>Tech</p>
+                    </div>
+                    <div class="speaker-details">
                         <p class="speaker-or-volunteer">Speaker</p>
                         <p class="speaker-name">Dynasty</p>
-                        <p class="speaker-work">Accessibility in Design - A handmaid’s tale</p>
+                        <p class="speaker-topic">Accessibility in Design - A handmaid’s tale</p>
                     </div>
+                </div>
 
-                    <!-- Speaker 4 -->
-                    <div class="speaker">
-                        <img src="./Images/Speaker 4.png" alt="Speaker 3 image" />
-                        <div class="tech">
-                            <p>Influencer</p>
-                        </div>
+                <!-- Speaker 4 -->
+                <div class="speaker">
+                    <img src="./Images/Speaker 1.png" alt="Speaker 4 image" />
+                    <div class="influencer">
+                        <p>Influencer</p>
+                    </div>
+                    <div class="speaker-details">
                         <p class="speaker-or-volunteer">Volunteer</p>
                         <p class="speaker-name">Areous Ahmad</p>
-                        <p class="speaker-work">Accessibility in Design - A handmaid’s tale</p>
+                        <p class="speaker-topic">Accessibility in Design - A handmaid’s tale</p>
                     </div>
+                </div>
 
-                    <!-- Speaker 5 -->
-                    <div class="speaker">
-                        <img src="./Images/Speaker 4.png" alt="Speaker 3 image" />
-                        <div class="tech">
-                            <p>Influencer</p>
-                        </div>
-                        <p class="speaker-or-volunteer">Volunteer</p>
+                <!-- Speaker 5 -->
+                <div class="speaker">
+                    <img src="./Images/Speaker 2.png" alt="Speaker 5 image" />
+                    <div class="influencer">
+                        <p>Influencer</p>
+                    </div>
+                    <div class="speaker-details">
+                        <p class="speaker-or-volunteer">Speaker</p>
                         <p class="speaker-name">Areous Ahmad</p>
-                        <p class="speaker-work">Accessibility in Design - A handmaid’s tale</p>
+                        <p class="speaker-topic">Accessibility in Design - A handmaid’s tale</p>
                     </div>
                 </div>
             </div>
@@ -157,45 +210,48 @@
 
         <!-- Organizers -->
         <section id="organizers-mobile">
-            <div class="container">
-                <p class="meet-organizers">Meet the <span class="bold-organizers">Organizers</span></p>
-                <img src="./Images/Mobile pointer.svg" alt="mobile pointer" class="mobile-pointer" />
+            <div class="container organizer-container">
+                <p class="meet-organizers">
+                    Meet The <br />
+                    <span class="bold-organizers">Organizers</span>
+                </p>
+                <div class="mobile-pointer">
+                    <img src="./Images/Mobile pointer.svg" alt="mobile pointer" />
+                </div>
             </div>
-        </section>
 
-        <!-- Mobile organizers -->
-        <section id="mobile-organizers">
-            <div class="container">
-                <!-- Individual organizers -->
-                <div class="individual-organizers">
-                    <!-- Organizer name -->
-                    <h2 class="organizer-name">Andikan F. Bassey</h2>
-                    <div class="organizer-img-and-job">
-                        <!-- organizer image -->
-                        <img src="./Images/Organizer 1.png" alt="Organizer 2" class="organizer-img" />
-                        <p></p>
+            <!-- Mobile organizers -->
+            <div id="mobile-organizers">
+                <div class="container">
+                    <!-- Individual organizers -->
+                    <div class="individual-organizers">
+                        <!-- Organizer name -->
+                        <h2 class="organizer-name">Andikan F. Bassey</h2>
+                        <div class="organizer-img-and-job">
+                            <!-- organizer image -->
+                            <img src="./Images/Organizer1.svg" alt="Organizer 1" class="organizer-img" />
+                            <p class="organizer-job">Product Designer</p>
+                        </div>
+                        <p class="about-organizer">
+                            Andikan is one of the amazing kreatives of KND. He has over 4 years of design experience and is currently creating design solutions at xxxxxxxxx. Want to know more about Andikan? Follow his socials!
+                        </p>
                     </div>
-                    <p class="about-organizer">
-                        Andikan is one of the amazing kreatives of KND. He has over 4 years of design experience and is currently creating design solutions at xxxxxxxxx. Want to know more about Andikan? Follow his socials!
-                    </p>
-                </div>
-                <!-- Other organizers -->
-                <div class="other-organizers">
-                    <!-- Other organizers Image -->
-                    <img src="./Images/Organizer 2.png" alt="Organizer 2" />
-                    <img src="./Images/Organizer 3.png" alt="Organizer 3" />
-                    <img src="./Images/Organizer 4.png" alt="Organizer 4" />
-                    <img src="./Images/Organizer 5.png" alt="Organizer 5" />
-                    <img src="./Images/Organizer.png" alt="Organizer 6" />
-                    <img src="./Images/Organizer 7.png" alt="Organizer 7" />
-                    <img src="./Images/Organizer.png" alt="Organizer" />
-                </div>
 
-                <!-- Read more about KND -->
-                <div class="read-more">
-                    <div class="link-arrow">
-                        <a href="#" class="read-more-mobile">Read more about KND here</a>
-                        <img src="./Images/arrow-link-purple.png" alt="Link image" />
+                    <!-- Other organizers -->
+                    <div class="other-organizers">
+                        <!-- Other organizers Image -->
+                        <img src="./Images/Organizer2.svg" alt="Organizer 2" />
+                        <img src="./Images/Organizer3.svg" alt="Organizer 3" />
+                        <img src="./Images/Organizer4.svg" alt="Organizer 4" />
+                        <img src="./Images/Organizer5.svg" alt="Organizer 5" />
+                        <img src="./Images/Organizer6.svg" alt="Organizer 6" />
+                        <img src="./Images/Organizer7.svg" alt="Organizer 7" />
+                        <img src="./Images/Organizer7.svg" alt="Organizer 7" />
+                    </div>
+
+                    <div class="view-more link-arrow">
+                        <a href="#">view more</a>
+                        <img src="./Images/arrow-link-purple.svg" alt="Link image" />
                     </div>
                 </div>
             </div>
@@ -203,19 +259,23 @@
 
         <!-- Web organizers -->
         <section id="web-organizers">
-            <div class="container">
+            <div class="container web-organizer-container">
                 <!-- Meet the organizers web -->
                 <div class="org-web">
                     <div class="organizer-web">
-                        <p class="meet-organizers-web">Meet the <span class="bold-organizers">Organizers</span></p>
-                        <img src="./Images/Web pointer.svg" alt="web pointer" class="web-pointer" />
+                        <p class="meet-organizers-web">
+                            Meet the<br />
+                            <span class="bold-organizers">Organizers</span>
+                        </p>
+
                         <!-- Web pointer -->
+                        <img src="./Images/Web pointer.svg" alt="web pointer" class="web-pointer" />
                     </div>
 
                     <!-- Read more about KND here -->
-                    <div class="link-arrow">
+                    <div class="link-arrow read-more-cta">
                         <a href="#" class="read-more-web">Read more about KND here</a>
-                        <img src="./Images/arrow-link-purple.png" alt="Link image" />
+                        <img src="./Images/arrow-link-purple.svg" alt="Link image" />
                     </div>
                 </div>
 
@@ -223,165 +283,194 @@
                 <div class="individual-organizers">
                     <!-- Organizer name -->
                     <h2 class="organizer-name">Andikan F. Bassey</h2>
+
                     <div class="organizer-img-and-job">
-                        <!-- organizer image -->
-                        <img src="./Images/Organizer 1.png" alt="Organizer 2" class="organizer-img" />
-                        <p></p>
+                        <img src="./Images/Organizer1.svg" alt="Organizer 2" class="organizer-img" />
+                        <p class="organizer-job">Product Designer</p>
                     </div>
                     <p class="about-organizer">
                         Andikan is one of the amazing kreatives of KND. He has over 4 years of design experience and is currently creating design solutions at xxxxxxxxx. Want to know more about Andikan? Follow his socials!
                     </p>
-                </div>
-                <!-- Other organizers -->
-                <div class="other-organizers">
-                    <!-- Other organizers Image -->
-                    <img src="./Images/Organizer 2.png" alt="Organizer 2" />
-                    <img src="./Images/Organizer 3.png" alt="Organizer 3" />
-                    <img src="./Images/Organizer 4.png" alt="Organizer 4" />
-                    <img src="./Images/Organizer 5.png" alt="Organizer 5" />
-                    <img src="./Images/Organizer.png" alt="Organizer 6" />
-                    <img src="./Images/Organizer 7.png" alt="Organizer 7" />
-                    <img src="./Images/Organizer.png" alt="Organizer" />
+
+                    <!-- Other organizers -->
+                    <div class="other-organizers">
+                        <!-- Other organizers Image -->
+                        <img src="./Images/Organizer2.svg" alt="Organizer 2" />
+                        <img src="./Images/Organizer3.svg" alt="Organizer 3" />
+                        <img src="./Images/Organizer4.svg" alt="Organizer 4" />
+                        <img src="./Images/Organizer5.svg" alt="Organizer 5" />
+                        <img src="./Images/Organizer6.svg" alt="Organizer 6" />
+                        <img src="./Images/Organizer7.svg" alt="Organizer 7" />
+                        <img src="./Images/Organizer7.svg" alt="Organizer 7" />
+                    </div>
+
+                    <!-- View more -->
+                    <div class="link-arrow view-more">
+                        <a href="#">View more</a>
+                        <img src="./Images/arrow-link-purple.svg" alt="Link image" />
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Sponsors -->
         <section id="sponsor-section">
-            <div class="sponsorship">
-                <h2 class="become-a-sponsor">Become a Sponsor</h2>
-                <p>As a sponsor, we’re promising reach to thousands of people who are interested in your brand. What better way to get your brand in front of people.</p>
-                <!-- Contact us -->
-                <div class="contact-us-sponsor">
-                    <a href="#">Contact Us</a>
-                    <img src="./Images/arrow-link-purple.png" alt="Link image" />
-                </div>
-            </div>
-
-            <div class="sponsorship-images">
-                <!-- Sponsor Image 1-->
-                <div class="sponsorship-img">
-                    <img src="./Images/JULIUS BERGER.png" alt="Julius berger image" />
+            <div class="container">
+                <!-- Read more about KND -->
+                <div class="read-more">
+                    <div class="link-arrow">
+                        <a href="#" class="read-more-mobile">Read more about KND here</a>
+                        <img src="./Images/arrow-link-purple.svg" alt="Link image" />
+                    </div>
                 </div>
 
-                <!-- Sponsor Image 2-->
-                <div class="sponsorship-img">
-                    <img src="./Images/BEHTEL.png" alt="Bechtel Image" />
-                </div>
+                <div class="sponsorship-container">
+                    <div class="sponsorship">
+                        <h2 class="become-a-sponsor">
+                            Become a<br />
+                            Sponsor
+                        </h2>
+                        <p class="sponsor-copy">As a sponsor, we’re promising reach to thousands of people who are interested in your brand. What better way to get your brand in front of people.</p>
 
-                <!-- Sponsor Image 3-->
-                <div class="sponsorship-img">
-                    <img src="./Images/KIEWIT.png" alt="Kiewit Image" />
-                </div>
+                        <!-- Contact us -->
+                        <div class="contact-us-sponsor">
+                            <a href="#">Contact Us</a>
+                            <img src="./Images/arrow-link-purple.svg" alt="Link image" />
+                        </div>
+                    </div>
 
-                <!-- Sponsor Image 4-->
-                <div class="sponsorship-img">
-                    <img src="./Images/DAMAC.png" alt="Damac Image" />
-                </div>
+                    <div class="sponsorship-images">
+                        <!-- Sponsor Image 1-->
+                        <div class="sponsorship-img">
+                            <img src="./Images/julius berger.svg" alt="Julius berger image" class="imgs" />
+                        </div>
 
-                <!-- Sponsor Image 5-->
-                <div class="sponsorship-img">
-                    <img src="./Images/KIEWIT.png" alt="Kiewit Image" />
-                </div>
+                        <!-- Sponsor Image 2-->
+                        <div class="sponsorship-img">
+                            <img src="./Images/bechtel.svg" alt="Bechtel Image" />
+                        </div>
 
-                <!-- Sponsor Image 6-->
-                <div class="sponsorship-img">
-                    <img src="./Images/DAMAC.png" alt="Damac Image" />
-                </div>
+                        <!-- Sponsor Image 3-->
+                        <div class="sponsorship-img">
+                            <img src="./Images/kiewit.svg" alt="Kiewit Image" />
+                        </div>
 
-                <!-- Sponsor Image 7-->
-                <div class="sponsorship-img">
-                    <img src="./Images/KIEWIT.png" alt="Kiewit Image" />
-                </div>
+                        <!-- Sponsor Image 4-->
+                        <div class="sponsorship-img">
+                            <img src="./Images/DAMAC.svg" alt="Damac Image" />
+                        </div>
 
-                <!-- Sponsor Image 8-->
-                <div class="sponsorship-img">
-                    <img src="./Images/BEHTEL.png" alt="Bechtel Image" />
-                </div>
+                        <!-- Sponsor Image 5-->
+                        <div class="sponsorship-img">
+                            <img src="./Images/kiewit.svg" alt="Kiewit Image" />
+                        </div>
 
-                <!-- Sponsor Image 9-->
-                <div class="sponsorship-img">
-                    <img src="./Images/JULIUS BERGER.png" alt="Julius berger image" />
-                </div>
+                        <!-- Sponsor Image 6-->
+                        <div class="sponsorship-img">
+                            <img src="./Images/DAMAC.svg" alt="Damac Image" />
+                        </div>
 
-                <!-- Sponsor Image 10-->
-                <div class="sponsorship-img">
-                    <img src="./Images/BEHTEL.png" alt="Bechtel Image" />
-                </div>
+                        <!-- Sponsor Image 7-->
+                        <div class="sponsorship-img">
+                            <img src="./Images/kiewit.svg" alt="Kiewit Image" />
+                        </div>
 
-                <!-- Sponsor Image 11-->
-                <div class="sponsorship-img">
-                    <img src="./Images/JULIUS BERGER.png" alt="Julius berger image" />
-                </div>
+                        <!-- Sponsor Image 8-->
+                        <div class="sponsorship-img">
+                            <img src="./Images/bechtel.svg" alt="Bechtel Image" />
+                        </div>
 
-                <!-- Sponsor Image 12-->
-                <div class="sponsorship-img">
-                    <img src="./Images/BEHTEL.png" alt="Bechtel Image" />
-                </div>
+                        <!-- Sponsor Image 9-->
+                        <div class="sponsorship-img">
+                            <img src="./Images/julius berger.svg" alt="Julius berger image" />
+                        </div>
 
-                <!-- Sponsor Image 13-->
-                <div class="sponsorship-img">
-                    <img src="./Images/KIEWIT.png" alt="Kiewit Image" />
-                </div>
+                        <!-- Sponsor Image 10-->
+                        <div class="sponsorship-img">
+                            <img src="./Images/bechtel.svg" alt="Bechtel Image" />
+                        </div>
 
-                <!-- Sponsor Image 14-->
-                <div class="sponsorship-img">
-                    <img src="./Images/DAMAC.png" alt="Damac Image" />
-                </div>
+                        <!-- Sponsor Image 11-->
+                        <div class="sponsorship-img">
+                            <img src="./Images/julius berger.svg" alt="Julius berger image" />
+                        </div>
 
-                <!-- Sponsor Image 15-->
-                <div class="sponsorship-img">
-                    <img src="./Images/You.png" alt="You image" />
+                        <!-- Sponsor Image 12-->
+                        <div class="sponsorship-img">
+                            <img src="./Images/bechtel.svg" alt="Bechtel Image" />
+                        </div>
+
+                        <!-- Sponsor Image 13-->
+                        <div class="sponsorship-img">
+                            <img src="./Images/kiewit.svg" alt="Kiewit Image" />
+                        </div>
+
+                        <!-- Sponsor Image 14-->
+                        <div class="sponsorship-img">
+                            <img src="./Images/damac.svg" alt="Damac Image" />
+                        </div>
+
+                        <!-- Sponsor Image 15-->
+                        <div class="sponsorship-img">
+                            <img src="./Images/you.svg" alt="You image" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Buy tickets -->
         <section id="ticket-section">
-            <h2>Convinced?</h2>
-            <p>Let's get you a spot now</p>
+            <div class="container">
+                <h2 class="convinced">Convinced?</h2>
+                <p class="spot">Let's get you a spot now</p>
 
-            <!-- Ticket type -->
-            <div class="ticket-type">
-                <!-- In-person -->
-                <div class="in-person">
-                    <p class="in-person-heading">In-person</p>
-                    <p class="in-person-price">N1500</p>
-                    <!-- Perks -->
-                    <ul>
-                        <li><span>&#10022; </span>Feature perk 1 for in person attendee</li>
-                        <li><span>&#10022; </span>Feature perk 1 for in person attendee</li>
-                        <li><span>&#10022; </span>Feature perk 1 for in person attendee</li>
-                        <li><span>&#10022; </span>Feature perk 1 for in person attendee</li>
-                        <li><span>&#10022; </span>Feature perk 1 for in person attendee</li>
-                        <li><span>&#10022; </span>Feature perk 1 for in person attendee</li>
-                        <li><span>&#10022; </span>Feature perk 1 for in person attendee</li>
-                    </ul>
-                    <!-- In-Person CTA -->
-                    <div class="in-person-cta">
-                        <a href="#">Buy tickets</a>
-                        <img src="./Images/arrow-link-purple.png" alt="Link image" />
+                <!-- Ticket type -->
+                <div class="ticket-type">
+                    <!-- In-person -->
+                    <div class="in-person">
+                        <p class="ticket-heading in-person-heading">In-person</p>
+                        <p class="ticket-price in-person-price">N1500</p>
+
+                        <!-- Perks -->
+                        <ul>
+                            <li><span>&#10022; </span>Feature perk 1 for in person attendee</li>
+                            <li><span>&#10022; </span>Feature perk 1 for in person attendee</li>
+                            <li><span>&#10022; </span>Feature perk 1 for in person attendee</li>
+                            <li><span>&#10022; </span>Feature perk 1 for in person attendee</li>
+                            <li><span>&#10022; </span>Feature perk 1 for in person attendee</li>
+                            <li><span>&#10022; </span>Feature perk 1 for in person attendee</li>
+                            <li><span>&#10022; </span>Feature perk 1 for in person attendee</li>
+                        </ul>
+
+                        <!-- In-Person CTA -->
+                        <div class="ticket-cta in-person-cta">
+                            <a href="#">Buy tickets</a>
+                            <img src="./Images/arrow-link-purple.svg" alt="Link image" />
+                        </div>
                     </div>
-                </div>
 
-                <!-- Online -->
-                <div class="online">
-                    <p class="online-heading">In-person</p>
-                    <p class="online-price">Free</p>
-                    <!-- Perks -->
-                    <ul>
-                        <li><span>&#10022; </span>Feature perk 1 for in person attendee</li>
-                        <li><span>&#10022; </span>Feature perk 1 for in person attendee</li>
-                        <li><span>&#10022; </span>Feature perk 1 for in person attendee</li>
-                        <li><span>&#10022; </span>Feature perk 1 for in person attendee</li>
-                        <li><span>&#10022; </span>Feature perk 1 for in person attendee</li>
-                        <li><span>&#10022; </span>Feature perk 1 for in person attendee</li>
-                        <li><span>&#10022; </span>Feature perk 1 for in person attendee</li>
-                    </ul>
-                    <!-- Online CTA -->
-                    <div class="online-cta">
-                        <a href="#">Reserve you spot</a>
-                        <img src="./Images/arrow-link-purple.png" alt="Link image" />
+                    <!-- Online -->
+                    <div class="online">
+                        <p class="ticket-heading online-heading">Online</p>
+                        <p class="ticket-price online-price">Free</p>
+
+                        <!-- Perks -->
+                        <ul>
+                            <li><span>&#10022; </span>Feature perk 1 for in person attendee</li>
+                            <li><span>&#10022; </span>Feature perk 1 for in person attendee</li>
+                            <li><span>&#10022; </span>Feature perk 1 for in person attendee</li>
+                            <li><span>&#10022; </span>Feature perk 1 for in person attendee</li>
+                            <li><span>&#10022; </span>Feature perk 1 for in person attendee</li>
+                            <li><span>&#10022; </span>Feature perk 1 for in person attendee</li>
+                            <li><span>&#10022; </span>Feature perk 1 for in person attendee</li>
+                        </ul>
+
+                        <!-- Online CTA -->
+                        <div class="ticket-cta online-cta">
+                            <a href="#">Reserve your spot</a>
+                            <img src="./Images/arrow-link-blue.svg" alt="Link image" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -389,56 +478,66 @@
 
         <!-- Footer -->
         <footer>
-            <div class="container">
+            <div class="container footer-container">
                 <!-- Reach out -->
                 <div class="reachout-and-top">
                     <div class="reach-out">
                         <p>Want to know more</p>
-                        <div class="reach-out-cta">
+                        <div clfass="reach-out-cta">
                             <a href="#">Reach out</a>
-                            <img src="./Images/arrow-link-purple.png" alt="Link image" />
+                            <img src="./Images/arrow-link-purple.svg" alt="Link image" />
                         </div>
                     </div>
-                    <!-- Back to top -->
-                    <a href=""><img src="./Images/back-to-top.png" alt="Back top top image" /></a>
-                    <!-- Second logo -->
-                    <img src="./Images/Logo 2.svg" alt="Second logo" />
-                </div>
-            </div>
-            <!-- Who we are -->
-            <div class="who-we-are">
-                <h2>Who we are</h2>
-                <!-- Footer nav -->
-                <nav class="nav-links">
-                    <a href="#">About</a>
-                    <a href="#">Volunteer</a>
-                    <a href="#">Sponsor/Donate</a>
-                    <a href="#">Become ad Speaker</a>
-                    <a href="#">Join our discord</a>
-                </nav>
-            </div>
 
-            <!-- A product of KND -->
-            <div class="a-product-of-knd">
-                <div class="product-and-top">
-                    <h2>A Product of KND</h2>
-                    <a href="#"><img src="./Images/back-to-top.png" alt="Back top top image" /></a>
+                    <!-- Back to top -->
+                    <a href="#hero-section"><img src="./Images/back-to-top.png" alt="Back top top image" /></a>
+
+                    <!-- Second logo -->
+                    <div class="footer-web-logo">
+                        <img src="./Images/Logo 2.svg" alt="Second logo" />
+                    </div>
                 </div>
-                <p>Kreatives Next Door is a collective of digital creatives building solutions for the community</p>
-                <!-- Second logo -->
-                <img src="./Images/Logo 2.svg" alt="Second logo" />
-                <!-- Socials logo -->
-                <div class="socials-1">
-                    <img src="./Images/Instagram.png" alt="Instagram" />
-                    <img src="./Images/LinkecIn.png" alt="LinkedIn" />
-                    <img src="./Images/Twitter.png" alt="Twitter" />
-                    <img src="./Images/Mail.png" alt="Mail" />
+
+                <!-- Who we are -->
+                <div class="who-we-are">
+                    <h2 class="who-we-are-heading">Who we are</h2>
+
+                    <!-- Footer nav -->
+                    <nav class="nav-links">
+                        <a href="#">About</a>
+                        <a href="#">Volunteer</a>
+                        <a href="#">Sponsor/Donate</a>
+                        <a href="#">Become a Speaker</a>
+                        <a href="#">Join our discord</a>
+                    </nav>
                 </div>
-                <!-- Copyright -->
-                <div class="copyright">
-                    <p>&copy; Copyright. All Rights Reserved KND 2022</p>
+
+                <!-- A product of KND -->
+                <div class="a-product-of-knd">
+                    <div class="product-and-top">
+                        <h2>A Product of KND</h2>
+                        <a href="#hero-section" class="top-2"><img src="./Images/back-to-top.png" alt="Back top top image" /></a>
+                    </div>
+                    <p class="footer-copy">Kreatives Next Door is a collective of digital creatives building solutions for the community</p>
+
+                    <!-- Second logo -->
+                    <img src="./Images/Logo 2.svg" alt="Second logo" class="footer-logo" />
+
+                    <!-- Socials logo -->
+                    <div class="socials-1">
+                        <a href="#"><img src="./Images/instagram.svg" alt="Instagram" /></a>
+                        <a href="#"><img src="./Images/LinkedIn.svg" alt="LinkedIn" /></a>
+                        <a href="#"><img src="./Images/Twitter.svg" alt="Twitter" /></a>
+                        <a href="#"><img src="./Images/Mail.svg" alt="Mail" /></a>
+                    </div>
+
+                    <!-- Copyright -->
+                    <div class="copyright">
+                        <p>&copy; Copyright. All Rights Reserved KND 2022</p>
+                    </div>
                 </div>
             </div>
         </footer>
+        <script src="main.js"></script>
     </body>
 </html>
