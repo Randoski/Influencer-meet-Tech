@@ -572,6 +572,12 @@ footer .footer-container .nav-links a {
   text-transform: uppercase;
   margin-top: 24px;
 }
+footer .footer-container .nav-links a:link, footer .footer-container .nav-links a:visited {
+  color: var(--black);
+}
+footer .footer-container .nav-links a:hover, footer .footer-container .nav-links a:active {
+  color: var(--purple);
+}
 footer .footer-container .nav-links a:first-child {
   margin-top: 0;
 }
@@ -623,11 +629,17 @@ footer .footer-container .a-product-of-knd .copyright {
   header .header-container .nav-right .nav-links a {
     text-decoration: none;
     text-transform: uppercase;
-    padding-right: 40px;
+    margin-right: 40px;
     font-weight: 500;
     font-size: 1em;
     line-height: 120%;
     letter-spacing: 0.02em;
+  }
+  header .header-container .nav-right .nav-links a:link, header .header-container .nav-right .nav-links a:visited {
+    color: var(--black);
+  }
+  header .header-container .nav-right .nav-links a:hover, header .header-container .nav-right .nav-links a:active {
+    color: var(--purple);
   }
   header .header-container .nav-right .nav-links .nav-extra {
     display: none;
@@ -1157,6 +1169,10 @@ footer .footer-container .a-product-of-knd .copyright {
 #what-is-imtconf .why-attend-container .why-attend {
   padding: 10px 0;
   margin-top: 40px;
+}
+#what-is-imtconf .why-attend-container .why-attend .sample {
+  display: flex;
+  justify-content: flex-end;
 }
 #what-is-imtconf .why-attend-container .why-attend .attend-img-and-heading {
   display: grid;
