@@ -4,370 +4,473 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="./css/style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="main.js">
         <title>Influencer meet Tech</title>
     </head>
     <body>
+
         <!-- Nav  -->
-        <header id="navbar">
-            <div class="container">
+        <header>
+            <div class="container header-container">
+                
                 <!-- Logo  -->
-                <img src="./Images/Logo.svg" alt="IMTConf logo" class="mainlogo" />
+                <a href="#" class="logo">
+                    <img src="./Images/Logo.svg" alt="IMTConf logo" class="main-logo" />
+                </a>
 
                 <!-- Nav right -->
                 <div class="nav-right">
+
                     <!-- Buy tickets -->
                     <div class="buy-tickets link-arrow">
                         <a href="#">Buy tickets</a>
-                        <img src="./Images/arrow-link-purple.png" alt="Link image" />
+                        <img src="./Images/arrow-link-purple.svg" alt="Link image" />
                     </div>
 
                     <!-- Nav links -->
                     <nav class="nav-links">
-                        <a href="#"><img src="./Images/Hamburger.png" alt="Hamburger menu" /></a>
                         <a href="#">About</a>
                         <a href="#">Speakers</a>
                         <a href="#">Organizers</a>
                         <a href="#">Volunteer</a>
                         <a href="#">Sponsor</a>
+
+                        <!-- Nav extra (Mobile) -->
+                        <div class="nav-extra">
+                            <div class="buy-tickets link-arrow">
+                                <a href="#">Buy tickets</a>
+                                <img src="./Images/arrow-link-purple.svg" alt="Link image" />
+                            </div>
+                            <div class="close">
+                                <p class="close-link">Close</p>
+                            </div>
+                        </div>
                     </nav>
+                    <div class="hamburger">
+                        <i class="fa fa-bars"></i>
+                    </div>
                 </div>
             </div>
         </header>
 
 
-        <!-- About-hero-section -->
-        <section id="about">
+        <!-- Hero section -->
+        <section id="hero-about-section">
             <div class="container">
-                <!-- Mobile hero Image -->
-                <img src="./Images/Hero-Section-2-mobile.svg" alt="About hero section">
-                <!-- Web hero image -->
-                <img src="./Images/Hero-section-2-web.svg" alt="About hero section">
+                <img src="./Images/Hero-Section-2-mobile.svg" alt="Mobile hero image" class="about-section-mobile-hero-image">
+                <img src="./Images/Hero-section-2-web.svg" alt="Web hero image" class="about-section-web-image">
             </div>
         </section>
 
 
-        <!-- Scroll / qualities -->
-        <section id="scroll">
-            <!-- Mobile scroll -->
-            <div class="scroll-1">
-                <p class="scroll-purple">Give.</p>
-                <p class="scroll-brown">Equity.</p>
-                <p class="scroll-purple">Give.</p>
-                <p class="scroll-blue">Community.</p>
-                <p class="scroll-purple">Give.</p>
+        <!-- Qualities -->
+        <section id="qualities">
+            <div class="quality-container">
+                <div class="quality quality1">Give.</div>
+                <div class="quality quality2">Equity.</div>
+                <div class="quality quality1">Give.</div>
+                <div class="quality quality3">Community.</div>
+                <div class="quality quality1">Give.</div>
+                <div class="quality quality2">Inclusiveness.</div>
+                <div class="quality quality1">Give.</div>
+                <div class="quality quality3">Accountability.</div>
             </div>
 
-            <!-- Mobile scroll 2 -->
-            <div class="scroll2">
-                <p class="scroll-brown">Inclusiveness.</p>
-                <p class="scroll-purple">Give.</p>
-                <p class="scroll-blue">Accessibility.</p>
-            </div>
-
-            <!-- Web scroll -->
-            <div class="scroll">
-                <p class="scroll-purple">Give.</p>
-                <p class="scroll-brown">Equity.</p>
-                <p class="scroll-purple">Give.</p>
-                <p class="scroll-blue">Community.</p>
-                <p class="scroll-purple">Give.</p>
-                <p class="scroll-brown">Inclusiveness.</p>
-                <p class="scroll-purple">Give.</p>
-                <p class="scroll-blue">Accessibility.</p>
+            <!-- Extra quality for mobile -->
+            <div class="quality-container quality-mobile-extra">
+                <div class="quality quality2">Inclusiveness.</div>
+                <div class="quality quality1">Give.</div>
+                <div class="quality quality3">Accountability.</div>
+                <div class="quality quality1">Give.</div>
+                <div class="quality quality2">Equity.</div>
+                <div class="quality quality1">Give.</div>
+                <div class="quality quality3">Community.</div>
+                <div class="quality quality1">Give.</div>
             </div>
         </section>
 
 
-        <!-- Communities -->
+        <!-- Community -->
         <section id="communities">
-            <div class="container">
-                <div class="three-communities">
+            <div class="container community-container">
 
-                    <!-- IMT community -->
-                    <div class="community community-1">
-                        <div class="community-1-">
-                            <!-- Logo -->
-                            <img src="./Images/IMT-community-logo.png" alt="IMT logo">
-                        </div>
-                        <!-- Community copy -->
-                        <h2 class="community-name">Imt</h2> 
-                        <p class="community-copy">Influencers Meet Tech (IMT) is an event that plans to bridge the gap between all creatives like designers,
-                        developers and influencers. It’s an avenue for all creators to meet and share knowledge amongst each other.</p>
+                <!-- IMT -->
+                <div class="community imt">
+                    <div class="logo-bg imt-logo">
+                        <img src="./Images/IMT-community-logo.png" alt="IMT Logo">
                     </div>
-                    <!-- Community CTA -->
-                    <div class="community-cta link-arrow">
-                        <a href="#">Join Our Slack</a>
-                        <img src="./Images/arrow-link-purple.png" alt="Link image" />
-                    </div>
+                    <h2 class="community-name">IMT</h2>
+                    <p class="community-copy">Influencers Meet Tech (IMT) is an event that plans to bridge the gap between all creatives like designers,
+                         developers and influencers. It’s an avenue for all creators to meet and share knowledge amongst each other.</p>
 
-                    <!-- KND community -->
-                    <div class="community community-2">
-                        <div class="community-2-">
-                            <!-- Logo -->
-                            <img src="./Images/KND-comm-logo.png" alt="KND logo">
-                        </div>
-                        <!-- Community copy -->
-                        <h2 class="community-name">Knd</h2> 
-                        <p class="community-copy">Kreatives Next Door (KND) is a group aimed at building creatives from different facets of tech. Create an
-                        avenue for individuals to upskill in their respective fields and foster collaboration. Oh yeah, we got our name from the cartoon.</p>
-                    </div>
-                    <!-- Community CTA -->
-                    <div class="community-cta link-arrow">
-                        <a href="#">Join Our Discord</a>
-                        <img src="./Images/arrow-link-purple.png" alt="Link image" />
-                    </div>
-
-                    <!-- OSDC community -->
-                    <div class="community community-3">
-                        <div class="community-3-">
-                            <!-- Logo -->
-                            <img src="./Images/OSDC-community-logo.png" alt="OSDC logo">
-                        </div>
-                        <!-- Community copy -->
-                        <h2 class="community-name">Osdc</h2> 
-                        <p class="community-copy">Open Source Designer’s Community (OSDC) is a community that fosters support interactions through meeting and
-                        connecting with people in various fields. Here, designers are one and we can all grow together.</p>
-                    </div>
-                    <!-- Community CTA -->
-                    <div class="community-cta link-arrow">
-                        <a href="#">Join Our Discord</a>
-                        <img src="./Images/arrow-link-purple.png" alt="Link image" />
+                    <!-- Discord link -->
+                    <div class="link-arrow community-cta">
+                        <a href="#" class="view-more">Join Our Slack</a>
+                        <img src="./Images/arrow-link-purple.svg" alt="Link image" />
                     </div>
                 </div>
 
+                <!-- KND -->
+                <div class="community knd">
+                    <div class="logo-bg knd-logo">
+                        <img src="./Images/KND-comm-logo.png" alt="KND logo">
+                    </div>
+                    <h2 class="community-name">KND</h2>
+                    <p class="community-copy">Kreatives Next Door (KND) is a group aimed at building creatives from different facets of tech. Create an avenue for 
+                        individuals to upskill in their respective fields and foster collaboration. Oh yeah, we got our name from the cartoon.</p>
 
-            </div>
-        </section>
-
-
-        <!-- Why Attend -->
-        <section id="why-attend">
-            <div class="container">
-                <div class="why-attend-header">
-                    <p class="what-is-Imtconf">What is IMTConf?</p>
-                    <h2 class="attend-heading">Why Attend :)</h2>
+                    <!-- Discord link -->
+                    <div class="link-arrow community-cta">
+                        <a href="#" class="view-more">Join Our Discord</a>
+                        <img src="./Images/arrow-link-purple.svg" alt="Link image" />
+                    </div>
                 </div>
 
-                <!-- Reasons to attend -->
-                <div class="reasons-to-attend">
-
-
-                    <!-- Network & Play -->
-                    <div class="reason">
-                        <div class="reason-img">
-                            <img src="./Images/Network & play.png" alt="Network image" class="reason-img">
-                        </div>
-                        <div>
-                            <h2 class="reason-header">Network & Play</h2>
-                            <p class="reason-copy">People say creatives don’t know how to have fun and we’re always stuck to our 
-                            screens, Come show them that we can party hard.</p>
-    
-                            <!-- Reason to attend CTA -->
-                            <div class="reason-to-attend-cta link-arrow">
-                                <a href="#">RSVP Now</a>
-                                <img src="./Images/arrow-link-purple.png" alt="Link image" />
-                            </div>
-                        </div>
+                <!-- OSDC -->
+                <div class="community osdc">
+                    <div class="logo-bg osdc-logo">
+                        <img src="./Images/OSDC-community-logo.png" alt="OSDC logo">
                     </div>
+                    <h2 class="community-name">OSDC</h2>
+                    <p class="community-copy">Open Source Designer’s Community (OSDC) is a community that fosters support interactions through meeting and connecting with
+                         people in various fields. Here, designers are one and we can all grow together.</p>
 
-
-                     <!-- Showcase -->
-                     <div class="reason">
-                        <div class="reason-img">
-                            <img src="./Images/search-favoriteshowcase.svg" alt="Network image" class="reason-img">
-                        </div>
-                        <div>
-                            <h2 class="reason-header">Showcase</h2>
-                            <p class="reason-copy">Have any project you want to show and feel like you need a place to show them off?
-                            Then IMTConf is for you. Come show us what you got!</p>
-    
-                            <!-- Reason to attend CTA -->
-                            <div class="reason-to-attend-cta link-arrow">
-                                <a href="#">RSVP Now</a>
-                                <img src="./Images/arrow-link-purple.png" alt="Link image" />
-                            </div>
-                        </div>
-                     </div>
-
-
-                     <!-- Interact -->
-                     <div class="reason">
-                        <div class="reason-img">
-                            <img src="./Images/Interact.png" alt="Network image" class="reason-img">
-                        </div>
-                        <div>
-                            <h2 class="reason-header">Interact</h2>
-                            <p class="reason-copy">Meet and interact with passionate people who are trying to find their feet and with
-                            the “big boys” in the tech space.</p>
-    
-                            <!-- Reason to attend CTA -->
-                            <div class="reason-to-attend-cta link-arrow">
-                                <a href="#">RSVP Now</a>
-                                <img src="./Images/arrow-link-purple.png" alt="Link image" />
-                            </div>
-                        </div>
-                     </div>
-
-                     
-                     <!-- Build -->
-                     <div class="reason">
-                        <div class="reason-img">
-                            <img src="./Images/Interact.png" alt="Network image" class="reason-img">
-                        </div>
-                        <div>
-                            <h2 class="reason-header">Interact</h2>
-                            <p class="reason-copy">With several domain experts spanning different industries, we can come together to solve a problem facing everyone of us.</p>
-    
-                            <!-- Reason to attend CTA -->
-                            <div class="reason-to-attend-cta link-arrow">
-                                <a href="#">RSVP Now</a>
-                                <img src="./Images/arrow-link-purple.png" alt="Link image" />
-                            </div>
-                        </div>
-                     </div>
+                    <!-- Discord link -->
+                    <div class="link-arrow community-cta">
+                        <a href="#" class="view-more">Join Our Discord</a>
+                        <img src="./Images/arrow-link-purple.svg" alt="Link image" />
+                    </div>
                 </div>
             </div>
         </section>
 
 
-        <!-- Contact Us & Frequently asked Questions -->
-        <section id="contact-and-FAQ">
+        <!-- What is IMTConf -->
+        <section id="what-is-imtconf">
             <div class="container">
-
-                <!-- Contact us -->
-                <div class="contact-us">
-                    <p class="contact-heading">Contact Us</p>
+                <div class="imfconf-header">
+                    <p class="sub-text">What is IMTConf?</p>
+                    <h2 class="main-text">Why Attend :)</h2>
                 </div>
+
+                <div class="why-attend-container">
+
+                    <!-- Reason 1 -->
+                    <div class="why-attend">
+                        <div class="why-attend-header">
+                            <div class="attend-img-and-heading">
+                                
+                                <div class="reason-image">
+                                    <img src="./Images/Network & play.png" alt="Network and play Image">
+                                </div>
+
+                                <div class="reason-full-text">
+                                    <div class="reason-text">
+                                        <h2 class="reason-heading">Network & Play</h2>
+                                        <p class="reason-copy">People say creatives don’t know how to have fun and we’re always stuck to our screens, Come show them that we can party hard.</p>
+                                    </div>
+
+                                    <!-- RSVP Link -->
+                                    <div class="link-arrow">
+                                        <a href="#" class="view-more">RSVP Now</a>
+                                        <img src="./Images/arrow-link-purple.svg" alt="Link image" />
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        
+                    </div>
+  
+                    <!-- Reason 2 -->
+                    <div class="why-attend">
+                        <div class="why-attend-header">
+                            <div class="attend-img-and-heading">
+
+                                <div class="reason-image">
+                                    <img src="./Images/search-favoriteshowcase.svg" alt="Showcase Image">
+                                </div>
+
+                                <div class="reason-full-text">
+                                    <div class="reason-text">
+                                        <h2 class="reason-heading">Showcase</h2>
+                                        <p class="reason-copy">Have any project you want to show and feel like you need a place to show them off? Then IMTConf is for you. Come show us what you got!</p>
+                                    </div>
+                                    
+                                    <!-- RSVP Link -->
+                                    <div class="link-arrow">
+                                        <a href="#" class="view-more">RSVP Now</a>
+                                        <img src="./Images/arrow-link-purple.svg" alt="Link image" />
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <!-- Reason 3 -->
+                    <div class="why-attend">
+                        <div class="why-attend-header">
+                            <div class="attend-img-and-heading">
+
+                                <div class="reason-image">
+                                    <img src="./Images/Interact.png" alt="Interact image">
+                                </div>
+
+                                <div class="reason-full-text">
+                                    <div class="reason-text">
+                                        <h2 class="reason-heading">Interact</h2>
+                                        <p class="reason-copy">Meet and interact with passionate people who are trying to find their feet and with the “big boys” in the tech space.</p>
+                                    </div>
+                                    
+                                    <!-- RSVP Link -->
+                                    <div class="link-arrow">
+                                        <a href="#" class="view-more">RSVP Now</a>
+                                        <img src="./Images/arrow-link-purple.svg" alt="Link image" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Reason 4 -->
+                    <div class="why-attend">
+                        <div class="why-attend-header">
+                            <div class="attend-img-and-heading">
+                                
+                                <div class="reason-image">
+                                    <img src="./Images/Build.png" alt="Builder image">
+                                </div>
+
+                                <div class="reason-full-text">
+                                    <div class="reason-text">
+                                        <h2 class="reason-heading">Builder</h2>
+                                        <p class="reason-copy">With several domain experts spanning different industries, we can come together to solve a problem facing everyone of us.</p>
+                                    </div>
+                                    
+                                    <!-- RSVP Link -->
+                                    <div class="link-arrow">
+                                        <a href="#" class="view-more">RSVP Now</a>
+                                        <img src="./Images/arrow-link-purple.svg" alt="Link image" />
+                                    </div>  
+                                </div>                  
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="container contact-container">
 
                 <!-- Contact form -->
-                <form action="">
-                    <!-- Name -->
-                    <input type="text" id="name" placeholder="Your Name">
-                    <!-- Email address -->
-                    <input type="email" id="name" placeholder="Your Email Address">
-                    <!-- How would you like to assist us>> -->
-                    <select name="assistance" id="assistance">
-                        <option value="assist" disabled>How would you like to assist us?</option>
-                        <option value="sponsor">I want to Sponsor</option>
-                        <option value="volunteer">I want to volunteer</option>
-                        <option value="partner">I want to partner</option>
-                        <option value="donate">I want to donate</option>
-                        <option value="confirmations">I want to make some confirmations</option>
-                      </select>
-                      <!-- Text area -->
-                      <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-                      <!-- Community CTA -->
-                    <div class="send-message link-arrow">
-                        <a href="#">Send message</a>
-                            <img src="./Images/arrow-link-purple.png" alt="Link image" />
-                        </div>
-                </form>
+                <div class="contact-form-container">
+                    <p class="contact-us">Contact Us</p>
 
-                <!-- Frequently asked questions -->
-                <div class="FAQ">
-                    <p class="FAQ-heading">Frequently asked questions</p>
+                    <!-- Form -->
+                    <form action="" id="contact-form">
 
-                    <!-- Question 1 -->
-                    <div class="question">
-                        <p>Can i upgrade my ticket?</p>
-                        <img src="./Images/Up.svg" alt="up arrow">
+                        <!-- Name -->
+                        <input type="text" id="name" name="name" placeholder="Your Name">
+                        <p class="error name-error"></p>
+
+                        <!-- Email -->
+                        <input type="email" id="email" name="email" placeholder="Your Email Address">
+                        <p class="error email-error"></p>
+
+                        <!-- How would you like to assist us? -->
+                        <select name="assistance" id="assistance" form="contact-form">
+                            <option>How would you like to assist us?</option>
+                            <option>I want to volunteer</option>
+                            <option>I want to Sponsor</option>
+                            <option>I want to make Suggestions</option>
+                            <option>I want to make enquires</option>
+                            <option>Something else</option>
+                        </select>
+                        <p class="error select-error"></p>
+
+                        <!-- Message -->
+                        <textarea id="message" name="message" rows="8" cols="20" placeholder="Your Message"></textarea>
+                        <p class="error message-error"></p>
+
+                        <!-- Submit -->
+                        <!-- <div class="submit-form link-arrow"> -->
+                            <input type="submit" id="submit" value="Send Message">
+                            <!-- <img src="./Images/arrow-link-blue.svg" alt="Link image" /> -->
+                        <!-- </div>     -->
+                    </form>
+                </div>
+
+                <!-- FAQ -->
+                <div class="faq">
+                    <h2 class="faq-heading">Frequently Asked Questions</h2>
+
+                    <!-- Questions -->
+                    <div class="questions">
+
+                        <!-- Question 1 -->
+                       <div class="question-heading">
+                            <p class="question">Can I upgrade my ticket?</p>
+                            <div class="question-img">
+                                <img src="./Images/Up.svg" alt="Up arrow">
+                            </div>
+                       </div>   
+                       <p class="amswer"></p>
+
+                        <!-- Question 2 -->
+                       <div class="question-heading">
+                            <p class="question">Can I upgrade my ticket?</p>
+                            <div class="question-img">
+                                <img src="./Images/Up.svg" alt="Up arrow">
+                            </div>
+                       </div>
+                       <p class="amswer"></p>
+
+                        <!-- Question 3 -->
+                       <div class="question-heading">
+                            <p class="question">Can I upgrade my ticket?</p>
+                            <div class="question-img">
+                                <img src="./Images/Up.svg" alt="Up arrow">
+                            </div>
+                       </div>
+                       <p class="amswer"></p>
+
+                        <!-- Question 4 -->
+                       <div class="question-heading">
+                            <p class="question">Can I upgrade my ticket?</p>
+                            <div class="question-img">
+                                <img src="./Images/Up.svg" alt="Up arrow">
+                            </div>
+                       </div>
+                       <p class="amswer"></p>
+
+                        <!-- Question 5 -->
+                       <div class="question-heading">
+                            <p class="question">Can I upgrade my ticket?</p>
+                            <div class="question-img">
+                                <img src="./Images/Up.svg" alt="Up arrow">
+                            </div>
+                       </div>
+                       <p class="amswer"></p>
+
+                       
                     </div>
-
-                    <!-- Question 2 -->
-                    <div class="question">
-                        <p>Can i upgrade my ticket?</p>
-                        <img src="./Images/Up.svg" alt="up arrow">
-                    </div>
-
-                    <!-- Question 3 -->
-                    <div class="question">
-                        <p>Can i upgrade my ticket?</p>
-                        <img src="./Images/Up.svg" alt="up arrow">
-                    </div>
-
-                    <!-- Question 4 -->
-                    <div class="question">
-                        <p>Can i upgrade my ticket?</p>
-                        <img src="./Images/Up.svg" alt="up arrow">
-                    </div>
-
                 </div>
             </div>
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         <!-- Footer -->
         <footer>
-            <div class="container">
+            <div class="container footer-container">
+
                 <!-- Reach out -->
                 <div class="reachout-and-top">
                     <div class="reach-out">
                         <p>Want to know more</p>
                         <div class="reach-out-cta">
                             <a href="#">Reach out</a>
-                            <img src="./Images/arrow-link-purple.png" alt="Link image" />
+                            <img src="./Images/arrow-link-purple.svg" alt="Link image" />
                         </div>
                     </div>
-                    <!-- Back to top -->
-                    <a href=""><img src="./Images/back-to-top.png" alt="Back top top image" /></a>
-                    <!-- Second logo -->
-                    <img src="./Images/Logo 2.svg" alt="Second logo" />
-                </div>
-            </div>
-            <!-- Who we are -->
-            <div class="who-we-are">
-                <h2>Who we are</h2>
-                <!-- Footer nav -->
-                <nav class="nav-links">
-                    <a href="#">About</a>
-                    <a href="#">Volunteer</a>
-                    <a href="#">Sponsor/Donate</a>
-                    <a href="#">Become ad Speaker</a>
-                    <a href="#">Join our discord</a>
-                </nav>
-            </div>
 
-            <!-- A product of KND -->
-            <div class="a-product-of-knd">
-                <div class="product-and-top">
-                    <h2>A Product of KND</h2>
-                    <a href="#"><img src="./Images/back-to-top.png" alt="Back top top image" /></a>
+                    <!-- Back to top -->
+                    <a href="#hero-about-section" ><img src="./Images/back-to-top.png" alt="Back top top image" /></a>
+
+                    <!-- Second logo -->
+                    <div class="footer-web-logo">
+                        <img src="./Images/Logo 2.svg" alt="Second logo"  />
+                    </div>
                 </div>
-                <p>Kreatives Next Door is a collective of digital creatives building solutions for the community</p>
-                <!-- Second logo -->
-                <img src="./Images/Logo 2.svg" alt="Second logo" />
-                <!-- Socials logo -->
-                <div class="socials-1">
-                    <img src="./Images/Instagram.png" alt="Instagram" />
-                    <img src="./Images/LinkecIn.png" alt="LinkedIn" />
-                    <img src="./Images/Twitter.png" alt="Twitter" />
-                    <img src="./Images/Mail.png" alt="Mail" />
+
+                <!-- Who we are -->
+                <div class="who-we-are">
+                    <h2 class="who-we-are-heading">Who we are</h2>
+
+                    <!-- Footer nav -->
+                    <nav class="nav-links">
+                        <a href="#">About</a>
+                        <a href="#">Volunteer</a>
+                        <a href="#">Sponsor/Donate</a>
+                        <a href="#">Become a Speaker</a>
+                        <a href="#">Join our discord</a>
+                    </nav>
                 </div>
-                <!-- Copyright -->
-                <div class="copyright">
-                    <p>&copy; Copyright. All Rights Reserved KND 2022</p>
+
+                <!-- A product of KND -->
+                <div class="a-product-of-knd">
+                    <div class="product-and-top">
+                        <h2>A Product of KND</h2>
+                        <a href="#hero-about-section" class="top-2"><img src="./Images/back-to-top.png" alt="Back top top image" /></a>
+                    </div>
+                    <p class="footer-copy">Kreatives Next Door is a collective of digital creatives building solutions for the community</p>
+
+                    <!-- Second logo -->
+                    <img src="./Images/Logo 2.svg" alt="Second logo" class="footer-logo">
+
+                    <!-- Socials logo -->
+                    <div class="socials-1">
+                        <a href="#"><img src="./Images/instagram.svg" alt="Instagram" /></a>
+                        <a href="#"><img src="./Images/LinkedIn.svg" alt="LinkedIn" /></a>
+                        <a href="#"><img src="./Images/Twitter.svg" alt="Twitter" /></a>
+                        <a href="#"><img src="./Images/Mail.svg" alt="Mail" /></a>
+                    </div>
+
+                    <!-- Copyright -->
+                    <div class="copyright">
+                        <p>&copy; Copyright. All Rights Reserved KND 2022</p>
+                    </div>
                 </div>
             </div>
         </footer>
+        <!-- <script src="main.js"></script> -->
+        <script>
+            // Form validation
+let name = document.querySelector('#name');
+let nameError = document.querySelector('.name-error');
+let email = document.querySelector('#email');
+let emailError = document.querySelector('.email-error');
+let assistance = document.querySelector('#assistance');
+let assistanceError = document.querySelector('.assistance-error');
+let message = document.querySelector('#message');
+let messageError = document.querySelector('.message-error');
+
+form.addEventListener('submit', (e) => {
+    let nameValue = name.value.trim().toLowerCase();
+    let emailValue = email.value.trim().toLowerCase();
+    let assistanceValue = assistance.value;
+    let messageValue = message.value.trim().toLowerCase(); 
+
+    if (nameValue === '') {
+        e.preventDefault();
+        nameError.innerHTML = 'Name is required';
+        e.preventDefault();
+    } else if(emailValue === '') {
+        emailError.innerHTML = 'Email is required';
+        e.preventDefault();
+    } else if(assistanceValue === '') {
+        assistanceError.innerHTML = 'This field is required';
+        e.preventDefault();
+    } else if(messageValue === '') {
+        messageError.innerHTML = 'Please leave a message';
+        e.preventDefault();
+    } else {
+        form.submit();
+    }
+});
+
+        </script>
     </body>
 </html>
