@@ -46,16 +46,15 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    // color: var(--pry-color);
 }
 
-// Scroll bar
+// // Scroll bar
 // ::-webkit-scrollbar {
 //     width: 5px;
 // }
 
 // ::-webkit-scrollbar-thumb {
-//     background: var(--blue);; 
+//     background: var(--blue);
 //     border-radius: 10px;
 //   }
   
@@ -254,9 +253,6 @@ header {
 
 // Speakers
 #speakers-section {
-    margin-top: 56px;
-    background: var(--soft-brown);
-    font-family: var(--secondary-font);
 
     .section-heading-text {
         color: var(--deep-brown);
@@ -755,11 +751,12 @@ footer {
         }
 
         .nav-links {
+            margin-top: 32px;
             display: flex;
             flex-direction: column;
-            margin-top: 32px;
 
             a {
+                margin-right: 0;
                 text-decoration: none;
                 font-style: normal;
                 font-weight: 500;
@@ -1162,9 +1159,12 @@ footer {
                 }
             
                 .view-more {
-                    text-decoration: underline;
                     text-align: right;
                     margin-top: 16px;
+
+                    a {
+                        text-decoration: underline;
+                    }
                 }
             }
 
@@ -1352,10 +1352,7 @@ footer {
                 .who-we-are-heading {
                     margin-bottom: 4px;
                 }
-            }
 
-            a {
-                width: auto;
             }
 
             .a-product-of-knd {
@@ -1630,6 +1627,10 @@ footer {
                             font-size: 20px;
                             line-height: 120%;
                             letter-spacing: 0.02em;
+                        }
+
+                        a{
+                            text-decoration: underline;
                         }
 
                         img {

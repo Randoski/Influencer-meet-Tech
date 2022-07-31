@@ -170,11 +170,6 @@ header .header-container .nav-right .hamburger {
   width: 16px;
 }
 
-#speakers-section {
-  margin-top: 56px;
-  background: var(--soft-brown);
-  font-family: var(--secondary-font);
-}
 #speakers-section .section-heading-text {
   color: var(--deep-brown);
   font-size: 1.5em;
@@ -564,11 +559,12 @@ footer .footer-container .who-we-are h2 {
   letter-spacing: -0.02em;
 }
 footer .footer-container .nav-links {
+  margin-top: 32px;
   display: flex;
   flex-direction: column;
-  margin-top: 32px;
 }
 footer .footer-container .nav-links a {
+  margin-right: 0;
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
@@ -867,9 +863,11 @@ footer .footer-container .a-product-of-knd .copyright {
     display: none;
   }
   #web-organizers .web-organizer-container .individual-organizers .view-more {
-    text-decoration: underline;
     text-align: right;
     margin-top: 16px;
+  }
+  #web-organizers .web-organizer-container .individual-organizers .view-more a {
+    text-decoration: underline;
   }
   #sponsor-section .read-more {
     display: none;
@@ -1010,9 +1008,6 @@ footer .footer-container .a-product-of-knd .copyright {
   }
   footer .footer-container .who-we-are .who-we-are-heading {
     margin-bottom: 4px;
-  }
-  footer .footer-container a {
-    width: auto;
   }
   footer .footer-container .a-product-of-knd {
     margin-top: 0;
@@ -1224,6 +1219,9 @@ footer .footer-container .a-product-of-knd .copyright {
   font-size: 20px;
   line-height: 120%;
   letter-spacing: 0.02em;
+}
+#what-is-imtconf .why-attend-container .why-attend .attend-img-and-heading .reason-full-text .link-arrow a {
+  text-decoration: underline;
 }
 #what-is-imtconf .why-attend-container .why-attend .attend-img-and-heading .reason-full-text .link-arrow img {
   width: 12px;
