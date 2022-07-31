@@ -35,10 +35,10 @@
                     <!-- Nav links -->
                     <nav class="nav-links">
                         <a href="about.html">About</a>
-                        <a href="#speakers-section">Speakers</a>
-                        <a href="#general-organizers">Organizers</a>
+                        <a href="index.html#speakers-section">Speakers</a>
+                        <a href="index.html#general-organizers">Organizers</a>
                         <a href="#contact">Volunteer</a>
-                        <a href="#sponsor-section">Sponsor</a>
+                        <a href="index.html#sponsor-section">Sponsor</a>
 
                         <!-- Nav extra (Mobile) -->
                         <div class="nav-extra">
@@ -381,7 +381,7 @@
                     <div class="reach-out">
                         <p>Want to know more</p>
                         <div class="reach-out-cta">
-                            <a href="#">Reach out</a>
+                            <a href="#contact">Reach out</a>
                             <img src="./Images/arrow-link-purple.svg" alt="Link image" />
                         </div>
                     </div>
@@ -404,7 +404,7 @@
                         <a href="about.html">About</a>
                         <a href="#contact">Volunteer</a>
                         <a href="#contact">Sponsor/Donate</a>
-                        <a href="#">Become a Speaker</a>
+                        <a href="#contact">Become a Speaker</a>
                         <a href="#">Join our discord</a>
                     </nav>
                 </div>
@@ -435,42 +435,6 @@
                 </div>
             </div>
         </footer>
-        <!-- <script src="main.js"></script> -->
-        <script>
-            // Form validation
-let name = document.querySelector('#name');
-let nameError = document.querySelector('.name-error');
-let email = document.querySelector('#email');
-let emailError = document.querySelector('.email-error');
-let assistance = document.querySelector('#assistance');
-let assistanceError = document.querySelector('.assistance-error');
-let message = document.querySelector('#message');
-let messageError = document.querySelector('.message-error');
-
-form.addEventListener('submit', (e) => {
-    let nameValue = name.value.trim().toLowerCase();
-    let emailValue = email.value.trim().toLowerCase();
-    let assistanceValue = assistance.value;
-    let messageValue = message.value.trim().toLowerCase(); 
-
-    if (nameValue === '') {
-        e.preventDefault();
-        nameError.innerHTML = 'Name is required';
-        e.preventDefault();
-    } else if(emailValue === '') {
-        emailError.innerHTML = 'Email is required';
-        e.preventDefault();
-    } else if(assistanceValue === '') {
-        assistanceError.innerHTML = 'This field is required';
-        e.preventDefault();
-    } else if(messageValue === '') {
-        messageError.innerHTML = 'Please leave a message';
-        e.preventDefault();
-    } else {
-        form.submit();
-    }
-});
-
-        </script>
+        <script src="main.js"></script>
     </body>
 </html>

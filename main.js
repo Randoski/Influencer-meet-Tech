@@ -23,6 +23,10 @@ setInterval(function() {
 }, 1000);  
 
 
+
+
+
+
 // Form validation
 let name = document.querySelector('#name');
 let nameError = document.querySelector('.name-error');
@@ -58,5 +62,41 @@ form.addEventListener('submit', (e) => {
     }
 });
 
+alert('Thank you for your message!');
 
 
+
+
+
+// Change organizers details after 3seconds or click
+let organizerName = document.querySelector('.organizer-name');
+let organizerJob = document.querySelector('.organizer-job');
+let organizerImage = document.querySelector('.organizer-image');
+let aboutOrganizer = document.querySelector('.about-organizer');
+
+let organizers = ['Adinkan F. Bassey', 'Parklins', 'Parklins', 'Joshua', 'Elzabeth', 'Elvis', 'Elizabeth']
+let job = ["Product Designer", 'Illustrator', 'Graphics', 'Brand Designer', 'Product Designer', 'Product Designer', 'Brand Designer', 'Illustrator']
+let about = [
+    'Andikan is one of the amazing kreatives of KND. He has over 4 years of design experience and is currently creating design solutions at xxxxxxxxx. Want to know more about Andikan? Follow his socials!',
+    'Parklinks is one of the amazing kreatives of KND. He has over 4 years of design experience and is currently creating design solutions at xxxxxxxxx. Want to know more about Andikan? Follow his socials!',
+    'Parklinks is one of the amazing kreatives of KND. He has over 4 years of design experience and is currently creating design solutions at xxxxxxxxx. Want to know more about Andikan? Follow his socials!',
+    'Joshua is one of the amazing kreatives of KND. He has over 4 years of design experience and is currently creating design solutions at xxxxxxxxx. Want to know more about Andikan? Follow his socials!',
+    'Elizabeth is one of the amazing kreatives of KND. He has over 4 years of design experience and is currently creating design solutions at xxxxxxxxx. Want to know more about Andikan? Follow his socials!',
+    'Elvis is one of the amazing kreatives of KND. He has over 4 years of design experience and is currently creating design solutions at xxxxxxxxx. Want to know more about Andikan? Follow his socials!',
+    'Elizabeth is one of the amazing kreatives of KND. He has over 4 years of design experience and is currently creating design solutions at xxxxxxxxx. Want to know more about Andikan? Follow his socials!',
+]
+
+
+
+setInterval(function() {
+    
+        organizerName.innerHTML = organizers[0];
+        organizers.push(organizers.shift());
+    
+        organizerJob.innerHTML = job[0];
+        job.push(job.shift());
+    
+        organizerImage.src = 'images/organizers/' + organizers[0] + '.jpg';
+        aboutOrganizer.innerHTML = about[0];
+        about.push(about.shift());
+}, 3000);

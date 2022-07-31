@@ -53,6 +53,9 @@ body .link-arrow a {
   color: var(--purple);
   text-decoration: none;
 }
+body .link-arrow a:visited {
+  color: var(--purple);
+}
 
 header {
   background: var(--white);
@@ -396,12 +399,14 @@ header .header-container .nav-right .hamburger {
 }
 #sponsor-section .sponsorship .contact-us-sponsor {
   margin-top: 16px;
-  color: var(--purple);
   font-style: normal;
   font-weight: 400;
   font-size: 0.9em;
   line-height: 120%;
   letter-spacing: 0.02em;
+}
+#sponsor-section .sponsorship .contact-us-sponsor a {
+  color: var(--purple);
 }
 #sponsor-section .sponsorship .contact-us-sponsor img {
   width: 8px;
@@ -496,17 +501,15 @@ header .header-container .nav-right .hamburger {
   font-size: 1.5em;
   line-height: 120%;
   letter-spacing: 0.02em;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
   text-transform: uppercase;
 }
 #ticket-section .ticket-type .ticket-cta img {
   width: 16px;
 }
-#ticket-section .ticket-type .in-person-cta {
+#ticket-section .ticket-type .in-person-cta a {
   color: var(--purple);
 }
-#ticket-section .ticket-type .online-cta {
+#ticket-section .ticket-type .online-cta a {
   color: var(--blue);
 }
 #ticket-section .ticket-type .in-person-price, #ticket-section .ticket-type .online-heading {
@@ -541,7 +544,8 @@ footer .footer-container .reachout-and-top .reach-out-cta {
   font-weight: 700;
   font-size: 1.5em;
   line-height: 200%;
-  text-decoration: underline;
+}
+footer .footer-container .reachout-and-top .reach-out-cta a {
   color: var(--purple);
 }
 footer .footer-container .reachout-and-top .reach-out-cta img {
@@ -653,6 +657,9 @@ footer .footer-container .a-product-of-knd .copyright {
     font-size: 1em;
     line-height: 120%;
     text-decoration: underline;
+  }
+  header .header-container .nav-right .buy-tickets img {
+    width: 10px;
   }
   #hero-section .section1-container #mobile-hero-image {
     display: none;
@@ -951,6 +958,9 @@ footer .footer-container .a-product-of-knd .copyright {
     font-size: 64px;
     line-height: 120%;
     letter-spacing: 0.02em;
+  }
+  #ticket-section .ticket-type .online .ticket-cta img, #ticket-section .ticket-type .in-person .ticket-cta img {
+    width: 22px;
   }
   #ticket-section .ticket-type .online ul, #ticket-section .ticket-type .in-person ul {
     margin: 24px 0 0;
