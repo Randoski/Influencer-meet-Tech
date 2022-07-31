@@ -97,6 +97,11 @@ body {
             color: var(--purple);
             text-decoration: none;
         }
+
+        a:visited {
+            color: var(--purple);
+        }
+    
     }
 }
 
@@ -538,12 +543,15 @@ header {
 
         .contact-us-sponsor {
             margin-top: 16px;
-            color: var(--purple);
             font-style: normal;
             font-weight: 400;
             font-size: .9em;
             line-height: 120%;
             letter-spacing: 0.02em;
+
+            a {
+                color: var(--purple);
+            }
 
             img {
                 width: 8px;
@@ -661,7 +669,6 @@ header {
             font-size: 1.5em;
             line-height: 120%;
             letter-spacing: 0.02em;
-            text-decoration-line: underline;
             text-transform: uppercase;
 
             img {
@@ -670,17 +677,20 @@ header {
         }
 
         .in-person-cta {
-            color: var(--purple);
+            a {
+                color: var(--purple);
+            }
         }
 
         .online-cta {
-            color: var(--blue);
+            a {
+                color: var(--blue);
+            }
         }
 
         .in-person-price, .online-heading {
             -webkit-text-stroke-width: 1px;
             color: transparent;
-
         }
         
         .in-person-price {
@@ -719,8 +729,10 @@ footer {
                 font-weight: 700;
                 font-size: 1.5em;
                 line-height: 200%;
-                text-decoration: underline;
-                color: var(--purple);
+
+                a {
+                    color: var(--purple);
+                }
 
                 img {
                     width: 16px;
@@ -865,6 +877,10 @@ footer {
                         font-size: 1em;
                         line-height: 120%;
                         text-decoration: underline;
+                    }
+
+                    img {
+                        width: 10px;
                     }
                 }   
             }  
@@ -1249,6 +1265,7 @@ footer {
             .online, .in-person {
                 padding: 72px 0 82px 52px;
 
+
                 .ticket-heading {
                     font-weight: 700;
                     font-size: 40px;
@@ -1262,6 +1279,12 @@ footer {
                     font-size: 64px;
                     line-height: 120%;
                     letter-spacing: 0.02em;
+                }
+
+                .ticket-cta {
+                    img {
+                        width: 22px;
+                    }
                 }
 
                 ul {
