@@ -361,9 +361,11 @@ header .header-container .nav-right .hamburger {
   display: none;
 }
 #mobile-organizers .view-more {
-  text-decoration: underline;
   text-align: right;
   margin-top: 8px;
+}
+#mobile-organizers .view-more a {
+  text-decoration: underline;
 }
 
 #web-organizers {
@@ -1222,8 +1224,6 @@ footer .footer-container .a-product-of-knd .copyright {
   font-size: 20px;
   line-height: 120%;
   letter-spacing: 0.02em;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
 }
 #what-is-imtconf .why-attend-container .why-attend .attend-img-and-heading .reason-full-text .link-arrow img {
   width: 12px;
