@@ -28,75 +28,71 @@ setInterval(function() {
 
 
 // Form validation
-let name = document.querySelector('#name');
+let form = document.querySelector('.form');
+let name = document.querySelector('.name');
+let email = document.querySelector('.email');
+let assistance = document.querySelector('.assistance');
+let message = document.querySelector('.message');
+let submit = document.querySelector('.submit');
 let nameError = document.querySelector('.name-error');
-let email = document.querySelector('#email');
 let emailError = document.querySelector('.email-error');
-let assistance = document.querySelector('#assistance');
 let assistanceError = document.querySelector('.assistance-error');
-let message = document.querySelector('#message');
 let messageError = document.querySelector('.message-error');
 
-form.addEventListener('submit', (e) => {
-    let nameValue = name.value.trim().toLowerCase();
-    let emailValue = email.value.trim().toLowerCase();
-    let assistanceValue = assistance.value;
-    let messageValue = message.value.trim().toLowerCase(); 
 
-    if (nameValue === '') {
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    if (name.value === '') {
+        nameError.innerHTML = 'Please enter your name';
         e.preventDefault();
-        nameError.innerHTML = 'Name is required';
+    } else if (email.value === '') {
+        emailError.innerHTML = 'Please enter your email';
         e.preventDefault();
-    } else if(emailValue === '') {
-        emailError.innerHTML = 'Email is required';
+    } else if (assistance.value === '') {
+        assistanceError.innerHTML = 'Please enter your assistance';
         e.preventDefault();
-    } else if(assistanceValue === '') {
-        assistanceError.innerHTML = 'This field is required';
-        e.preventDefault();
-    } else if(messageValue === '') {
-        messageError.innerHTML = 'Please leave a message';
+    } else if (message.value === '') {
+        messageError.innerHTML = 'Please enter your message';
         e.preventDefault();
     } else {
         form.submit();
-        alert('Thank you for your message!');
     }
 });
 
-alert('Thank you for your message!');
-
-
+let faq = document.querySelector('.faq').innerHTML;
+faq = faq.replace(/\n/g, '<br>');
 
 
 
 // Change organizers details after 3seconds or click
-let organizerName = document.querySelector('.organizer-name');
-let organizerJob = document.querySelector('.organizer-job');
-let organizerImage = document.querySelector('.organizer-image');
-let aboutOrganizer = document.querySelector('.about-organizer');
+// let organizerName = document.querySelector('.organizer-name');
+// let organizerJob = document.querySelector('.organizer-job');
+// let organizerImage = document.querySelector('.organizer-image');
+// let aboutOrganizer = document.querySelector('.about-organizer');
 
-let organizers = ['Adinkan F. Bassey', 'Parklins', 'Parklins', 'Joshua', 'Elzabeth', 'Elvis', 'Elizabeth']
-let job = ["Product Designer", 'Illustrator', 'Graphics', 'Brand Designer', 'Product Designer', 'Product Designer', 'Brand Designer', 'Illustrator']
-let about = [
-    'Andikan is one of the amazing kreatives of KND. He has over 4 years of design experience and is currently creating design solutions at xxxxxxxxx. Want to know more about Andikan? Follow his socials!',
-    'Parklinks is one of the amazing kreatives of KND. He has over 4 years of design experience and is currently creating design solutions at xxxxxxxxx. Want to know more about Andikan? Follow his socials!',
-    'Parklinks is one of the amazing kreatives of KND. He has over 4 years of design experience and is currently creating design solutions at xxxxxxxxx. Want to know more about Andikan? Follow his socials!',
-    'Joshua is one of the amazing kreatives of KND. He has over 4 years of design experience and is currently creating design solutions at xxxxxxxxx. Want to know more about Andikan? Follow his socials!',
-    'Elizabeth is one of the amazing kreatives of KND. He has over 4 years of design experience and is currently creating design solutions at xxxxxxxxx. Want to know more about Andikan? Follow his socials!',
-    'Elvis is one of the amazing kreatives of KND. He has over 4 years of design experience and is currently creating design solutions at xxxxxxxxx. Want to know more about Andikan? Follow his socials!',
-    'Elizabeth is one of the amazing kreatives of KND. He has over 4 years of design experience and is currently creating design solutions at xxxxxxxxx. Want to know more about Andikan? Follow his socials!',
-]
+// let organizers = ['Adinkan F. Bassey', 'Parklins', 'Parklins', 'Joshua', 'Elzabeth', 'Elvis', 'Elizabeth']
+// let job = ["Product Designer", 'Illustrator', 'Graphics', 'Brand Designer', 'Product Designer', 'Product Designer', 'Brand Designer', 'Illustrator']
+// let about = [
+//     'Andikan is one of the amazing kreatives of KND. He has over 4 years of design experience and is currently creating design solutions at xxxxxxxxx. Want to know more about Andikan? Follow his socials!',
+//     'Parklinks is one of the amazing kreatives of KND. He has over 4 years of design experience and is currently creating design solutions at xxxxxxxxx. Want to know more about Andikan? Follow his socials!',
+//     'Parklinks is one of the amazing kreatives of KND. He has over 4 years of design experience and is currently creating design solutions at xxxxxxxxx. Want to know more about Andikan? Follow his socials!',
+//     'Joshua is one of the amazing kreatives of KND. He has over 4 years of design experience and is currently creating design solutions at xxxxxxxxx. Want to know more about Andikan? Follow his socials!',
+//     'Elizabeth is one of the amazing kreatives of KND. He has over 4 years of design experience and is currently creating design solutions at xxxxxxxxx. Want to know more about Andikan? Follow his socials!',
+//     'Elvis is one of the amazing kreatives of KND. He has over 4 years of design experience and is currently creating design solutions at xxxxxxxxx. Want to know more about Andikan? Follow his socials!',
+//     'Elizabeth is one of the amazing kreatives of KND. He has over 4 years of design experience and is currently creating design solutions at xxxxxxxxx. Want to know more about Andikan? Follow his socials!',
+// ]
 
 
 
-setInterval(function() {
+// setInterval(function() {
     
-        organizerName.innerHTML = organizers[0];
-        organizers.push(organizers.shift());
+//         organizerName.innerHTML = organizers[0];
+//         organizers.push(organizers.shift());
     
-        organizerJob.innerHTML = job[0];
-        job.push(job.shift());
+//         organizerJob.innerHTML = job[0];
+//         job.push(job.shift());
     
-        organizerImage.src = 'images/organizers/' + organizers[0] + '.jpg';
-        aboutOrganizer.innerHTML = about[0];
-        about.push(about.shift());
-}, 3000);
+//         organizerImage.src = 'images/organizers/' + organizers[0] + '.jpg';
+//         aboutOrganizer.innerHTML = about[0];
+//         about.push(about.shift());
+// }, 3000);

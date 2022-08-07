@@ -33,8 +33,9 @@
 
 
     // Fonts
-    --primary-font: 'Space Grotesk', sans-serif;
-    --secondary-font: 'Nunito', sans-serif;
+    // --primary-font: 'Space Grotesk', sans-serif;
+    --primary-font: 'Cabinet Grotesk', sans-serif;
+    --secondary-font: 'Maison Neue', sans-serif;
 } 
 
 
@@ -253,6 +254,7 @@ header {
 
 // Speakers
 #speakers-section {
+    background: var(--soft-brown);
 
     .section-heading-text {
         color: var(--deep-brown);
@@ -967,9 +969,6 @@ footer {
     #speakers-section {
         margin-top: 132px;  
 
-        .speaker-section {
-            display: none;
-        }
 
         .section-heading-text {
             font-style: normal;
@@ -1973,3 +1972,4 @@ footer {
         }
     }
 }
+

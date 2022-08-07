@@ -14,8 +14,8 @@
   --grey4: #d9d9d9;
   --pastel-purple: #f6edfe;
   --pastel-blue: #eaf0f2;
-  --primary-font: "Space Grotesk", sans-serif;
-  --secondary-font: "Nunito", sans-serif;
+  --primary-font: "Cabinet Grotesk", sans-serif;
+  --secondary-font: "Maison Neue", sans-serif;
 }
 
 *,
@@ -170,6 +170,9 @@ header .header-container .nav-right .hamburger {
   width: 16px;
 }
 
+#speakers-section {
+  background: var(--soft-brown);
+}
 #speakers-section .section-heading-text {
   color: var(--deep-brown);
   font-size: 1.5em;
@@ -711,9 +714,6 @@ footer .footer-container .a-product-of-knd .copyright {
   }
   #speakers-section {
     margin-top: 132px;
-  }
-  #speakers-section .speaker-section {
-    display: none;
   }
   #speakers-section .section-heading-text {
     font-style: normal;
